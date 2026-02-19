@@ -1,0 +1,17 @@
+
+.navbar{
+  background-color: antiquewhite;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.main{
+  background-color: bisque;
+}
+.about{
+  background-color: antiquewhite;
+}
+.contact{
+  background-color: bisque;
+}
