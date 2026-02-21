@@ -6,10 +6,9 @@ const [details, setDetails] = useState("")
 const [record, setRecord] = useState([])
   const submitHandler=(e)=>{
 e.preventDefault();
-const newRecord=[...record]
-console.log(title)
-console.log(details)
-newRecord.push({title:{title},data:{details}})
+localStorage.setItem(`${title}`,JSON.stringify({title,details}))
+const newRecord=[...record];
+newRecord.push({title,details})
 setRecord(newRecord)
 setDetails("")
 setTitle("")
@@ -44,7 +43,7 @@ setDetails(dets.target.value)
       </div>
       <div className="notes-container">
        {record.map((val,idx)=>{
-        return <NoteComponent key={idx} title={val.title} data={val.data}/>
+        return <NoteComponent key={idx} title={val.title} data={val.details}/>
        })}
       </div>
     </div>
