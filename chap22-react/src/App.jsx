@@ -12,7 +12,9 @@ import NotFound from './pages/404'
 import Men from './pages/men'
 import Women from './pages/Women'
 import Kids from './pages/Kids'
+import ProductMain from './pages/ProductMain'
 function App() {
+
   return (
     <div>
       <NavBar />
@@ -20,10 +22,15 @@ function App() {
 <Route   path="/" element={<Home/>} > </Route>
 
 <Route   path="/cart" element={<Cart/>} > </Route>
-<Route   path="/product" element={<Product/>} > 
+<Route   path="/cart/:id" element={<Cart/>} > </Route>
+<Route   path="/product" element={<Product/>} >
+<Route index element={<ProductMain/>}></Route>
+<Route path=":id" element={<ProductMain/>}></Route>
 <Route path='men' element={<Men/>}></Route>
 <Route path='women' element={<Women/>}></Route>
 <Route path='kids' element={<Kids/>}></Route>
+
+
 </Route>
 <Route   path="*" element={<NotFound/>} > </Route>
 

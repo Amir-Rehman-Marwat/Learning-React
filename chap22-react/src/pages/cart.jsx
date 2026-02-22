@@ -1,6 +1,9 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 function Cart() {
+  const params=useParams()
+  console.log(params)
   return (
     <div className="cart-container">
       <h1>Your Shopping Cart</h1>

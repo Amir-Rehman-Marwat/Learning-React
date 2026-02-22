@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 function Women() {
   return (
@@ -28,7 +29,9 @@ function Women() {
           <button>Add to Cart</button>
         </div>
       </div>
+       <Outlet />
     </div>
+ 
   )
 }
 
