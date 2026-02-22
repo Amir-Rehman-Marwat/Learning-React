@@ -1,0 +1,594 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+  text-transform: lowercase; /* Optional styling for 'the mentor' */
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.nav-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ctrl-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.ctrl-btn:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Specific styling for the Home button in controls to differentiate it */
+.home-icon-btn {
+  background-color: #eee;
+  font-weight: bold;
+}
+.home-container {
+  padding: 40px 5%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.home-hero {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.route-info {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.home-content h2 {
+  color: #333;
+}
+
+.home-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-content li {
+  margin: 10px 0;
+  color: #666;
+}
+.product-page {
+  padding: 40px 5%;
+}
+
+.path-label {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1-fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.product-card {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dummy-img {
+  height: 150px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.view-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-container {
+  padding: 40px 5%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cart-table {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #218838;
+}
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 50px 5% 20px 5%;
+  margin-top: 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #a777e3; /* Matching the Home hero theme */
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  border-left: 3px solid #6e8efb;
+  padding-left: 10px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Newsletter Input Group */
+.subscribe-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  flex: 1;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #6e8efb;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #a777e3;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.social-placeholders {
+  margin-top: 10px;
+}
+
+.social-placeholders span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.social-placeholders span:hover {
+  color: #fff;
+}
+.notfound-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* Keeps it centered between your nav and footer */
+  text-align: center;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fcfcfc;
+}
+
+.notfound-content {
+  max-width: 500px;
+}
+
+.error-code {
+  font-size: 8rem;
+  margin: 0;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.emoji {
+  font-size: 4rem;
+  display: block;
+  margin: 20px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.notfound-content h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.notfound-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.notfound-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.back-home-btn {
+  padding: 12px 25px;
+  background-color: #6e8efb;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.back-home-btn:hover {
+  background-color: #5a7be2;
+  transform: scale(1.05);
+}
+
+.report-btn {
+  padding: 12px 25px;
+  background-color: transparent;
+  color: #6e8efb;
+  border: 2px solid #6e8efb;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.routing-tip {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #fff3cd;
+  border-left: 5px solid #ffecb5;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #856404;
+}
+.product-page-container {
+  display: flex;
+  min-height: 80vh;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 20px;
+  padding: 20px 5%;
+}
+
+/* Sidebar Styling */
+.category-sidebar {
+  flex: 0 0 250px;
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.category-sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #6e8efb;
+  display: inline-block;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+
+.category-item {
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #555;
+  font-weight: 500;
+}
+
+.category-item:hover {
+  background-color: #e9ecef;
+  color: #6e8efb;
+}
+
+.category-item.active {
+  background-color: #6e8efb;
+  color: white;
+}
+
+/* Filter Section */
+.filter-section {
+  margin-top: 40px;
+}
+
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Main Content Styling */
+.product-main-content {
+  flex: 1;
+}
+
+.product-header {
+  margin-bottom: 30px;
+}
+
+.path-label span {
+  color: #6e8efb;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Product Card Styling */
+.product-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.product-image-placeholder {
+  height: 200px;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-weight: bold;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.price {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #6e8efb;
+}
+.category-page {
+  padding: 40px 5%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.category-banner {
+  padding: 50px;
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Theme Colors */
+.men-theme .category-banner { background: linear-gradient(135deg, #2c3e50, #4ca1af); }
+.women-theme .category-banner { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+.kids-theme .category-banner { background: linear-gradient(135deg, #f6d365, #fda085); }
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.item-card {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.item-card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.img-holder {
+  height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.item-card h4 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.item-card p {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.item-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Button color matches theme on hover */
+.men-theme .item-card button:hover { background-color: #2c3e50; }
+.women-theme .item-card button:hover { background-color: #ff9a9e; }
+.kids-theme .item-card button:hover { background-color: #f6d365; }
