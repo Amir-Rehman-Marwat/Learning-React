@@ -10,9 +10,7 @@ function App() {
 const response=await axios.get(`https://picsum.photos/v2/list?page=${page}&limit=20`)
 setData(response.data)
   }
-  useEffect(() => {
-   getdata()
-  }, [])
+ 
   useEffect(() => {
    getdata()
   }, [page])
