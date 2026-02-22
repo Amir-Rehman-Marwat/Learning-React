@@ -35,4 +35,4 @@ alert("case 2 use effect is runing! and it runs only once when a whole website i
   )
 }
 
-export default App
+export default App 
