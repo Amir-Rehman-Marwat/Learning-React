@@ -1,14 +1,15 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Nav from './components/Nav'
-import { ThemeDataContext } from './contexts/ThemeContext'
 
+import ThemeDataProvider from './contexts/ThemeContext'
 function App() {
-  const data=useContext(ThemeDataContext)
   return (
     <div>
-      {data}
-
+      app
+      <ThemeDataProvider>
 <Nav data={"this is my prop data"}></Nav>
+      </ThemeDataProvider>
+
 
     </div>
   )

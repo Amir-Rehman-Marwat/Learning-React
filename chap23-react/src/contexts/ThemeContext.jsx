@@ -1,13 +1,13 @@
 import React from 'react'
 import { createContext } from 'react'
+import Nav from '../components/Nav'
 export const ThemeDataContext=createContext()
-function ThemeContext({children}) {
+function ThemeDataProvider({children}) {
   return (
-    <ThemeDataContext.Provider value={"this is data sent from context "}>
-{children}
+    <ThemeDataContext.Provider value={{name:"amir"}}>
+ {children}
     </ThemeDataContext.Provider>
-
   )
 }
 
-export default ThemeContext
+export default ThemeDataProvider
